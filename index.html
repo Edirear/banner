@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edirears Business</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #121212;
+            color: #f0f0f0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            flex: 1;
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 0;
+            border-bottom: 1px solid #333;
+            margin-bottom: 40px;
+        }
+
+        .logo {
+            font-size: 2.8rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            background: linear-gradient(90deg, #00c853, #64dd17);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            text-shadow: 0 0 15px rgba(0, 200, 83, 0.3);
+        }
+
+        .tagline {
+            font-size: 1.2rem;
+            color: #aaa;
+            margin-bottom: 30px;
+        }
+
+        .main-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .description {
+            max-width: 700px;
+            margin-bottom: 40px;
+            line-height: 1.6;
+            font-size: 1.1rem;
+            color: #ccc;
+        }
+
+        .btn {
+            background: linear-gradient(135deg, #00c853, #64dd17);
+            color: #121212;
+            border: none;
+            padding: 16px 40px;
+            font-size: 1.2rem;
+            font-weight: 600;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 200, 83, 0.3);
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            text-decoration: none;
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0, 200, 83, 0.5);
+        }
+
+        .btn:active {
+            transform: translateY(1px);
+        }
+
+        .btn-icon {
+            font-size: 1.4rem;
+        }
+
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 60px;
+        }
+
+        .feature-card {
+            background-color: #1e1e1e;
+            border-radius: 12px;
+            padding: 25px;
+            width: 280px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .feature-icon {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            color: #00c853;
+        }
+
+        .feature-title {
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+            color: #f0f0f0;
+        }
+
+        .feature-desc {
+            color: #aaa;
+            line-height: 1.5;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px 0;
+            margin-top: 60px;
+            border-top: 1px solid #333;
+            color: #777;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            .logo {
+                font-size: 2.2rem;
+            }
+            
+            .description {
+                font-size: 1rem;
+            }
+            
+            .btn {
+                padding: 14px 30px;
+                font-size: 1.1rem;
+            }
+            
+            .features {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 class="logo">Edirears Business</h1>
+            <p class="tagline">Streamlining Business Operations with Innovative Solutions</p>
+        </header>
+        
+        <main class="main-content">
+            <div class="description">
+                <p>Welcome to Edirears Business, your comprehensive solution for managing and optimizing business processes. Our platform helps you streamline operations, enhance productivity, and drive growth.</p>
+                <p>Click the button below to provide your details and get started with our services.</p>
+            </div>
+            
+            <a href="https://forms.gle/pgjCh1fb31VqdsGw7" target="_blank" class="btn" id="detailsBtn">
+                <span class="btn-icon">+</span>
+                Add Your Details
+            </a>
+            
+            <div class="features">
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3 class="feature-title">Fast Setup</h3>
+                    <p class="feature-desc">Get started in minutes with our intuitive platform and easy onboarding process.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">🔒</div>
+                    <h3 class="feature-title">Secure & Reliable</h3>
+                    <p class="feature-desc">Your data is protected with enterprise-grade security and 99.9% uptime guarantee.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">📈</div>
+                    <h3 class="feature-title">Growth Focused</h3>
+                    <p class="feature-desc">Tools and insights designed to help your business scale and reach new heights.</p>
+                </div>
+            </div>
+        </main>
+        
+        <footer>
+            <p>&copy; 2023 Edirears Business. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script>
+        // Add animation to the button on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            const btn = document.getElementById('detailsBtn');
+            
+            // Add a slight delay for visual effect
+            setTimeout(() => {
+                btn.style.opacity = '1';
+                btn.style.transform = 'translateY(0)';
+            }, 500);
+            
+            // Initially set the button to be invisible and slightly offset
+            btn.style.opacity = '0';
+            btn.style.transform = 'translateY(20px)';
+            btn.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+            
+            // Add click confirmation
+            btn.addEventListener('click', function() {
+                // Optional: You could add analytics tracking here
+                console.log('User clicked on Add Your Details button');
+            });
+        });
+    </script>
+</body>
+</html>
